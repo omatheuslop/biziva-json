@@ -25,7 +25,9 @@
     "test:coverage": "jest --coverage",
     "build:types": "tsc",
     "build:types:watch": "tsc --watch",
-    "lint": "npm run build:types"
+    "lint": "npm run build:types",
+    "biziva": "node public/biziva/server.mjs",
+    "test:biziva": "node --test public/biziva/*.test.mjs"
   },
   "dependencies": {
     "@apihero/fetch": "^0.1.0",
