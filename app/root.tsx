@@ -24,17 +24,14 @@ export const meta: MetaFunction = ({ location }) => {
   const description =
     "JSON Hero makes reading and understand JSON files easy by giving you a clean and beautiful UI packed with extra features.";
   return {
-    title: "JSON Hero - a beautiful JSON viewer for the web",
+    title: "Biziva JSON · baseado no JSON Hero",
     viewport: "width=device-width,initial-scale=1",
     description,
     "og:image": `https://jsonhero.io${openGraphImage}`,
-    "og:url": `https://jsonhero.io${location.pathname}`,
     "og:title": "JSON Hero - A beautiful JSON viewer",
     "og:description": description,
     "twitter:image": `https://jsonhero.io${openGraphImage}`,
     "twitter:card": "summary_large_image",
-    "twitter:creator": "@json_hero",
-    "twitter:site": "@json_hero",
     "twitter:title": "JSON Hero",
     "twitter:description": description,
   };
@@ -91,6 +88,7 @@ function App() {
         <NonFlashOfWrongThemeEls ssrTheme={Boolean(theme)} />
       </head>
       <body className="overscroll-none">
+        <a href="/biziva/index.html" style={{display:"flex",justifyContent:"space-between",padding:"12px 20px",background:"#151217",color:"#fff",fontFamily:"Arial,sans-serif",borderBottom:"2px solid #d51a40"}}><strong>BIZIVA JSON</strong><span>Proteger e comparar JSON →</span></a>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
